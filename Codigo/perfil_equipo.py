@@ -1,6 +1,5 @@
 """
-El programa deberá solicitar el nombre del  equipo, comisión, nombre de cada integrante y 
-rol inicial en el proyecto.
+Actividad 8
 """
 #Funciones:
 def contiene_digitos(texto):
