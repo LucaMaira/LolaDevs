@@ -28,7 +28,7 @@ def main():
     nombre_integrante3 = str(input("Ingrese el nombre del integrante: "))
     rol_inicial3 = str(input("Ingrese el rol inicial en el proyecto: "))
 
-    print("-"*10)
+    print("-"*50)
     print(f"Nombre del equipo: {nombre_equipo.upper()}, posee una cantidad de caracteres de: {len(nombre_equipo)}")
     print(f"Las siglas del equipo son: {siglas(nombre_equipo)}")
     print(f"Comisión: {comision}")
@@ -39,4 +39,6 @@ def main():
         print("El nombre del equipo contiene dígitos")
     else:
         print("El nombre del equipo no contiene dígitos")
-    print("-"*10)
+    print("-"*50)
+
+main()
