@@ -3,11 +3,11 @@ Actividad 8
 """
 #Funciones:
 def contiene_digitos(texto):
-    val = False
-    for caracter in texto:
-        if caracter.isdigit():
-            val = True
-    return val
+    contiene_digitos = False
+    while not contiene_digitos:
+        if texto.isdigit():
+            contiene_digitos = True
+    return contiene_digitos
 
 def siglas(texto):
     sigla = "" #Variable vacía para almacenar las siglas
@@ -34,7 +34,7 @@ def main():
     print(f"Integrante 1: {nombre_integrante1.title()}, Rol: {rol_inicial1}")
     print(f"Integrante 2: {nombre_integrante2.title()}, Rol: {rol_inicial2}")
     print(f"Integrante 3: {nombre_integrante3.title()}, Rol: {rol_inicial3}")
-    if contiene_digitos(nombre_equipo) == True:
+    if contiene_digitos(nombre_equipo):
         print("El nombre del equipo contiene dígitos")
     else:
         print("El nombre del equipo no contiene dígitos")
