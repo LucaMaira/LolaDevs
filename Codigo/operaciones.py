@@ -3,5 +3,3 @@ def matrizInicializador (matriz, filas, columnas, valor):
         matriz.append([])
         for c in range(columnas):
             matriz[f].append(valor)
-
-"Holaaa"
