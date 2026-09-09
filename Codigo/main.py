@@ -14,9 +14,6 @@ def menu_principal():
     print ("8. Consultar ranking y Top 3 de escenarios.")
     print ("9. Generar informes finales.")
     print ("10 SALIR.")
-
-<<<<<<< HEAD
-    print ("")
     print ("")
 
     eleccion = input("Eliga una opcion (del 1 al 9 y 10 para EXIT): ")
@@ -25,12 +22,6 @@ def menu_principal():
 print ("")
 print ("")
 
-=======
-    eleccion = input("Eliga una opción (del 1 al 9 y 10 para EXIT): ")
-    return eleccion
-
-#Ejecución del programa principal:
->>>>>>> 1c32c2af143ee5bd489f157d3816d227a38291f6
 if __name__ == "__main__":
     while True:
         opcion = menu_principal()
@@ -47,7 +38,6 @@ if __name__ == "__main__":
             print ("")
             print ("")
         elif opcion == "2":
-<<<<<<< HEAD
             print("Actualizacion manual de concurrencia:")
             print("Seleccione escenario (E1, E2, E3, E4):")
             print("Seleccione dia (Viernes, Sabado, Domingo):")
@@ -59,15 +49,6 @@ if __name__ == "__main__":
             print("Ingrese codigo unico (ej. E1) o nombre del escenario:")
             print ("")
             print ("")
-=======
-            print("Actualización manual de concurrencia: ")
-            print("Seleccione escenario (E1, E2, E3, E4): ")
-            print("Seleccione dia (Viernes, Sabado, Domingo): ")
-            print("Ingrese nueva cantidad de asistentes: ")
-        elif opcion == "3":
-            print("Busqueda puntual de escenario: ")
-            print("Ingrese codigo unico (ej. E1) o nombre del escenario: ")
->>>>>>> 1c32c2af143ee5bd489f157d3816d227a38291f6
         elif opcion == "4":
             print("Consulta de concurrencia por dia: ")
             print("Seleccione el dia a consultar (Viernes, Sabado, Domingo): ")
