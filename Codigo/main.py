@@ -14,12 +14,21 @@ def menu_principal():
     print ("9. Generar informes finales.")
     print ("10 SALIR.")
 
+    print ("")
+    print ("")
+
     eleccion = input("Eliga una opcion (del 1 al 9 y 10 para EXIT): ")
     return eleccion
+
+print ("")
+print ("")
 
 if __name__ == "__main__":
     while True:
         opcion = menu_principal()
+
+        print ("")
+        print ("")
 
         if opcion == "1":
             print("Escenarios del festival:")
@@ -27,14 +36,20 @@ if __name__ == "__main__":
             print("2. Main Stage 2 (Codigo: E2 - Capacidad: 45.000)")
             print("3. Perry's Stage (Codigo: E3 - Capacidad: 30.000)")
             print("4. Alternative (Codigo: E4 - Capacidad: 25.000)")
+            print ("")
+            print ("")
         elif opcion == "2":
             print("Actualizacion manual de concurrencia:")
             print("Seleccione escenario (E1, E2, E3, E4):")
             print("Seleccione dia (Viernes, Sabado, Domingo):")
             print("Ingrese nueva cantidad de asistentes:")
+            print ("")
+            print ("")
         elif opcion == "3":
             print("Busqueda puntual de escenario:")
             print("Ingrese codigo unico (ej. E1) o nombre del escenario:")
+            print ("")
+            print ("")
         elif opcion == "4":
             print("Consulta de concurrencia por dia:")
             print("Seleccione el dia a consultar (Viernes, Sabado, Domingo):")
@@ -56,6 +71,8 @@ if __name__ == "__main__":
             break
         else:
             print("Opcion invalida. Debe ingresar un numero del 1 al 10.")
+
+        
 
     
 
