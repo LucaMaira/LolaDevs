@@ -1,3 +1,6 @@
+from random import randint
+import operaciones, datos
+
 def menu_principal():
     print("-"*55)
     print("\tBIENVENIDO AL PROGRAMA DE LOLLAPALOOZA")
