@@ -4,8 +4,8 @@ Actividad 8
 #Funciones:
 def contiene_digitos(texto):
     contiene_digitos = False
-    while not contiene_digitos:
-        if texto.isdigit():
+    for caracter in texto:
+        if caracter.isdigit():
             contiene_digitos = True
     return contiene_digitos
 
