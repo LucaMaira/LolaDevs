@@ -19,14 +19,11 @@ def menu_principal():
     eleccion = input("Eliga una opcion (del 1 al 9 y 10 para EXIT): ")
     return eleccion
 
-print ("")
-print ("")
-
-if __name__ == "__main__":
-    while True:
+def main():
+    bandera = True
+    while bandera:
         opcion = menu_principal()
 
-        print ("")
         print ("")
 
         if opcion == "1":
@@ -67,12 +64,11 @@ if __name__ == "__main__":
             print("Generar informes finales")
         elif opcion == "10":
             print("Gracias por utilizar el sistema de gestion de Lollapalooza.")
-            break
+            bandera = False
         else:
             print("Opcion invalida, debe ingresar un número del 1 al 10.")
 
-        
-
+main()
     
 
 
