@@ -17,11 +17,45 @@ def menu_principal():
     eleccion = input("Eliga una opcion (del 1 al 9 y 10 para EXIT): ")
     return eleccion
 
-
 if __name__ == "__main__":
-    opcion = menu_principal()
-    print("Elegiste:", opcion)
+    while True:
+        opcion = menu_principal()
 
+        if opcion == "1":
+            print("Escenarios del festival:")
+            print("1. Main Stage 1 (Codigo: E1 - Capacidad: 50.000)")
+            print("2. Main Stage 2 (Codigo: E2 - Capacidad: 45.000)")
+            print("3. Perry's Stage (Codigo: E3 - Capacidad: 30.000)")
+            print("4. Alternative (Codigo: E4 - Capacidad: 25.000)")
+        elif opcion == "2":
+            print("Actualizacion manual de concurrencia:")
+            print("Seleccione escenario (E1, E2, E3, E4):")
+            print("Seleccione dia (Viernes, Sabado, Domingo):")
+            print("Ingrese nueva cantidad de asistentes:")
+        elif opcion == "3":
+            print("Busqueda puntual de escenario:")
+            print("Ingrese codigo unico (ej. E1) o nombre del escenario:")
+        elif opcion == "4":
+            print("Consulta de concurrencia por dia:")
+            print("Seleccione el dia a consultar (Viernes, Sabado, Domingo):")
+        elif opcion == "5":
+            print("Registro de entradas vendidas:")
+            print("Seleccione categoria de acceso (Campo General, VIP Lounge, LollaFam, Prensa):")
+            print("Seleccione dia (Viernes, Sabado, Domingo):")
+            print("Ingrese cantidad de entradas vendidas a registrar:")
+        elif opcion == "6":
+            print("Consultar entradas vendidas y disponibles por categoria")
+        elif opcion == "7":
+            print("Consultar estadisticas e indicadores")
+        elif opcion == "8":
+            print("Consultar ranking y Top 3 de escenarios")
+        elif opcion == "9":
+            print("Generar informes finales")
+        elif opcion == "10":
+            print("Gracias por utilizar el sistema de gestion de Lollapalooza.")
+            break
+        else:
+            print("Opcion invalida. Debe ingresar un numero del 1 al 10.")
 
     
 
