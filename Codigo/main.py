@@ -19,13 +19,11 @@ def menu_principal():
     print ("10 SALIR.")
     print ("")
 
-    eleccion = input("Eliga una opcion (del 1 al 9 y 10 para EXIT): ")
-    return eleccion
-
 def main():
+    menu_principal()
     bandera = True
     while bandera:
-        opcion = menu_principal()
+        opcion = input("Ingrese una opción del 1 al 9, 10 para EXIT: ")
 
         print ("")
 
@@ -44,7 +42,6 @@ def main():
             print("Ingrese nueva cantidad de asistentes:")
             print ("")
             print ("")
-
         elif opcion == "3":
             print("Busqueda puntual de escenario:")
             print("Ingrese codigo unico (ej. E1) o nombre del escenario:")
