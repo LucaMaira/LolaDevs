@@ -20,6 +20,17 @@ def menu_principal():
     print ("")
 
 def main():
+    #Escenarios y capacidades
+    Codigo = ["E1", "E2", "E3", "E4"]
+    Capacidad = [50000, 45000, 30000, 25000]
+    Escenarios = ["Main Stage 1", "Main Stage 2", "Perry's Stage", "Alternative"]
+    opcion1 = operaciones.cargaInicial(Codigo, Escenarios, Capacidad)
+
+    #primera matriz incializar en escenarios
+    #segunda matriz incializar en categorias
+    #escenarios por dia
+    #categorias por dia
+
     menu_principal()
     bandera = True
     while bandera:
@@ -29,10 +40,7 @@ def main():
 
         if opcion == "1":
             print("Escenarios del festival:")
-            print("1. Main Stage 1 (Codigo: E1 - Capacidad: 50.000)")
-            print("2. Main Stage 2 (Codigo: E2 - Capacidad: 45.000)")
-            print("3. Perry's Stage (Codigo: E3 - Capacidad: 30.000)")
-            print("4. Alternative (Codigo: E4 - Capacidad: 25.000)")
+            operaciones.listaInformes(opcion1)
             print ("")
             print ("")
         elif opcion == "2":
